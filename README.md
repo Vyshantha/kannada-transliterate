@@ -24,6 +24,7 @@ const kannadatransliterate = require("kannada-transliterate");
 ```
 
 > IAST transliteration examples :
+> Note : IAST does not support strict nasalisation
 ```
 console.log('IAST >> ಕನ್ನಡ : ', kannadatransliterate("IAST","latin2kannada","saṃskṛta aṃgi yajṃakaṃkaṃa oṃṭe oṃdu oṃbatu saṃyukta ōṃ ", false, false));  
     // Expected IAST >> ಕನ್ನಡ : ಸಂಸ್ಕೃತ  ಅಂಗಿ  ಯಜ್ಅಕಂಕಂಅ  ಒಂಟೆ  ಒಂದು  ಒಂಬತು  ಸಂಯುಕ್ತ  ಓಂ 
@@ -31,7 +32,8 @@ console.log('IAST >> ISO : ', kannadatransliterate("IAST","latin2kannada","saṃ
     // Expected IAST >> ISO non-strict nasalation : saṁskṛta aṁgi yajṁakaṁkaṁa oṁṭe oṁdu oṁbatu saṁyukta ōṁ
 ```
 
-> ISO transliteration examples :
+> ISO transliteration examples : 
+> Note : ISO-15919 non-strict nasalisation does not get converted to ISO-15919 strict nasalisation
 ```
 console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kannada","samskṛta aṅgi yajñakaṅkaṇa oṇṭe ondu ombatu samyukta ōṁ ", false, true));  
     // Expected ISO >> ISO non-strict nasalisation : saṁskṛta aṁgi yajṁakaṁkaṁa oṁṭe oṁdu oṁbatu saṁyukta ōṁ 
