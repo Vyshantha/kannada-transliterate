@@ -1,0 +1,28 @@
+{
+  "name": "kannada-transliterate",
+  "version": "1.0.0",
+  "description": "Transliterator between ಕನ್ನಡ (kannaḍa) and Latin script based on IAST & ISO 15919",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vyshantha/kannada-transliterate.git"
+  },
+  "keywords": [
+    "transliterate",
+    "kannada",
+    "ISO-15919",
+    "IAST",
+    "latin",
+    "script",
+    "sanskrit"
+  ],
+  "author": "Vyshantha Simha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vyshantha/kannada-transliterate/issues"
+  },
+  "homepage": "https://github.com/Vyshantha/kannada-transliterate#readme"
+}
