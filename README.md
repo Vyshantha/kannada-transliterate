@@ -28,7 +28,8 @@ const kannadatransliterate = require("kannada-transliterate");
 > ISOOnly
 >> true or false
 
-> IAST transliteration examples :
+### IAST transliteration examples :
+
 > Note : IAST does not support strict nasalisation
 
 ```
@@ -38,7 +39,8 @@ console.log('IAST >> ISO : ', kannadatransliterate("IAST","latin2kannada","saṃ
     // Expected IAST >> ISO non-strict nasalation : saṁskṛta aṁgi yajṁakaṁkaṁa oṁṭe oṁdu oṁbatu saṁyukta ōṁ
 ```
 
-> ISO transliteration examples : 
+### ISO transliteration examples : 
+
 > Note : ISO-15919 non-strict nasalisation does not get converted to ISO-15919 strict nasalisation
 ```
 console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kannada","samskṛta aṅgi yajñakaṅkaṇa oṇṭe ondu ombatu samyukta ōṁ ", false, true));  
@@ -47,7 +49,8 @@ console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kanna
     // Expected ISO >> ISO strict nasalisation : samskṛta aṅgi yajñakaṅkaṇa oṇṭe ondu ombatu samyukta ōṁ
 ```
 
-> ISO-ಕನ್ನಡ transliteration examples :
+### ISO-ಕನ್ನಡ transliteration examples :
+
 ```
 console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kannada","aṅgi yajñakaṅkaṇa oṇṭe ondu ombatu samyukta ōṁ ", true, false));  
     // Expected ISO >> ಕನ್ನಡ : ಅಂಗಿ  ಯಜ್ಞಕಂಕಣ  ಒಂಟೆ  ಒಂದು  ಒಂಬತು  ಸಂಯುಕ್ತ ಓಂ 
@@ -57,7 +60,8 @@ console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kanna
     // Expected ISO >> ಕನ್ನಡ : ಶ್ರೀಮೂಲಸಂಘ  ದೇಶಿಗಣ  ಪುಸ್ತಕಗಚ್ಛ  ಕೊಂಡಕುಂದಾಂವಯಕೆ  ಸಿದ್ಧಾಂತ  ಚ  ಕ್ರವರ್ತ್ತಿ  ನಯಕೀರ್ತಿಮುನೀಶ್ವರೋ  ಭಾತಿ  ||
 ```
 
-> ಕನ್ನಡ transliteration examples :
+### ಕನ್ನಡ transliteration examples :
+
 ```
 console.log('ಕನ್ನಡ >> ISO : ', kannadatransliterate("ISO","kannada2latin","ಕನ್ನಡ ಕವಿರಾಜಮಾರ್ಗ - ಪದಱಿದು ನುಡಯಲುಂ ನುಡಿದುದ ನಱಿಯಲುಮಾರ್ಪರಾ ನಾಡವರ್ಗಳ್ ಚದುರರ್ ನಿಜದಿಂ ಕುರಿತೋದದೆಯುಂ ಕಾವ್ಯಪ್ರಯೋಗ ಪರಿಣತಮತೆಗಳ್", true, false)); 
     // Expected ಕನ್ನಡ >> ISO with strict nasalisation : kannaḍa kavirājamārga - padaṟidu nuḍayaluṁ nuḍiduda naṟiyalumārparā nāḍavargaḷ cadurar nijadiṁ kuritōdadeyuṁ kāvyaprayōga pariṇatamategaḷ
