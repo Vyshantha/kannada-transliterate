@@ -73,6 +73,9 @@ console.log('ಕನ್ನಡ >> ISO : ', kannadatransliterate("ISO","kannada2lat
     // Expected ಕನ್ನಡ >> ISO with strict nasalisation : kannaḍa kavirājamārga - padaṟidu nuḍayaluṁ nuḍiduda naṟiyalumārparā nāḍavargaḷ cadurar nijadiṁ kuritōdadeyuṁ kāvyaprayōga pariṇatamategaḷ
 ```
 
+## Execution 
+Given the above JavaScript code is included into a script.js file : ```node script.js```
+
 ## License
 Distributed under the MIT License. See LICENSE for more information.
 
