@@ -11,7 +11,8 @@ The package transliterates text from Kannada ಕನ್ನಡ (kannaḍa) script 
 const kannadatransliterate = require("kannada-transliterate");
 ```
 
-Method usage ```kannadatransliterate(type, direction, input, strictnasalisation, ISOOnly)```
+### Method call in code 
+```kannadatransliterate(type, direction, input, strictnasalisation, ISOOnly)```
 > type
 >>  'ISO' or 'IAST'
 
