@@ -4,7 +4,12 @@ The package transliterates text from Kannada ಕನ್ನಡ (kannaḍa) script 
 ## Install [Node](https://nodejs.org/en/download), [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and then install this package
 ```npm install kannada-transliterate```
 
+## Usage
 ### Import the "kannada-transliterate" package
+
+```
+const kannadatransliterate = require("kannada-transliterate");
+```
 
 Method usage ```kannadatransliterate(type, direction, input, strictnasalisation, ISOOnly)```
 > type
@@ -22,12 +27,9 @@ Method usage ```kannadatransliterate(type, direction, input, strictnasalisation,
 > ISOOnly
 >> true or false
 
-```
-const kannadatransliterate = require("kannada-transliterate");
-```
-
 > IAST transliteration examples :
 > Note : IAST does not support strict nasalisation
+
 ```
 console.log('IAST >> ಕನ್ನಡ : ', kannadatransliterate("IAST","latin2kannada","saṃskṛta aṃgi yajṃakaṃkaṃa oṃṭe oṃdu oṃbatu saṃyukta ōṃ ", false, false));  
     // Expected IAST >> ಕನ್ನಡ : ಸಂಸ್ಕೃತ  ಅಂಗಿ  ಯಜ್ಅಕಂಕಂಅ  ಒಂಟೆ  ಒಂದು  ಒಂಬತು  ಸಂಯುಕ್ತ  ಓಂ 
@@ -59,3 +61,12 @@ console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kanna
 console.log('ಕನ್ನಡ >> ISO : ', kannadatransliterate("ISO","kannada2latin","ಕನ್ನಡ ಕವಿರಾಜಮಾರ್ಗ - ಪದಱಿದು ನುಡಯಲುಂ ನುಡಿದುದ ನಱಿಯಲುಮಾರ್ಪರಾ ನಾಡವರ್ಗಳ್ ಚದುರರ್ ನಿಜದಿಂ ಕುರಿತೋದದೆಯುಂ ಕಾವ್ಯಪ್ರಯೋಗ ಪರಿಣತಮತೆಗಳ್", true, false)); 
     // Expected ಕನ್ನಡ >> ISO with strict nasalisation : kannaḍa kavirājamārga - padaṟidu nuḍayaluṁ nuḍiduda naṟiyalumārparā nāḍavargaḷ cadurar nijadiṁ kuritōdadeyuṁ kāvyaprayōga pariṇatamategaḷ
 ```
+
+## License
+Distributed under the MIT License. See LICENSE for more information.
+
+## Contact Author
+[Github](https://github.com/Vyshantha)
+
+## Report Issues
+[Code](https://github.com/Vyshantha/kannada-transliterate)
