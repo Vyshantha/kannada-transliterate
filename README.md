@@ -14,19 +14,25 @@ const kannadatransliterate = require("kannada-transliterate");
 ### Method call in code 
 ```kannadatransliterate(type, direction, input, strictnasalisation, ISOOnly)```
 > type
->>  'ISO' or 'IAST'
+>> 'ISO' \
+>> 'IAST'
 
 > direction
->> 'latin2kannada' or 'kannada2latin'
+>> 'latin2kannada' \
+>> 'kannada2latin'
 
 > input
->> text in IAST for kannaḍa or ISO-15919 for kannaḍa or ಕನ್ನಡ text
+>> text in Latin IAST for kannaḍa \
+>> text in Latin ISO-15919 for kannaḍa \
+>> text in ಕನ್ನಡ script
 
 > strictnasalisation
->> true or false
+>> true \
+>> false
 
 > ISOOnly
->> true or false
+>> true \
+>> false
 
 ### IAST transliteration examples :
 
