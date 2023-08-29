@@ -60,6 +60,8 @@ console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kanna
 ```
 console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kannada","aṅgi yajñakaṅkaṇa oṇṭe ondu ombatu samyukta ōṁ ", true, false));  
     // Expected ISO >> ಕನ್ನಡ : ಅಂಗಿ  ಯಜ್ಞಕಂಕಣ  ಒಂಟೆ  ಒಂದು  ಒಂಬತು  ಸಂಯುಕ್ತ ಓಂ 
+console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kannada","laṁc lāṁc liṁc līṁc luṁc lūṁc lr̥ṁc ll̥ṁc leṁc lēṁc laiṁc loṁc lōṁc lauṁc laṁc ", true, false));
+    // Expected ISO >> ಕನ್ನಡ : ಲಂಚ್  ಲಾಂಚ್  ಲಿಂಚ್  ಲೀಂಚ್  ಲುಂಚ್  ಲೂಂಚ್  ಲೃಂಚ್  ಲೢಂಚ್  ಲೆಂಚ್  ಲೇಂಚ್  ಲೈಂಚ್  ಲೊಂಚ್  ಲೋಂಚ್  ಲೌಂಚ್  ಲಂಚ್  
 console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kannada","za fa ennam̐ dēvā̃ fanta zinda śivo’ham mã", true, false));  
     // Expected ISO >> ಕನ್ನಡ : ಜ಼  ಫ಼ ಎನ್ನಀ  ದೇವಾಁ  ಫ಼ಂತ  ಜ಼ಿಂದ ಶಿವಽಹಮ್ ಮ್ಀ
 console.log('ISO >> ಕನ್ನಡ : ', kannadatransliterate("ISO","latin2kannada","śrīmūlasaṅgha dēśigaṇa pustakagaccha koṇḍakundānvayake siddhānta ca kravartti nayakīrtimunīśvarō bhāti ||", true, false));
