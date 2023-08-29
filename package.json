@@ -1,6 +1,6 @@
 {
   "name": "kannada-transliterate",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Transliterator between ಕನ್ನಡ (kannaḍa) and Latin script based on IAST & ISO 15919",
   "main": "index.js",
   "scripts": {
