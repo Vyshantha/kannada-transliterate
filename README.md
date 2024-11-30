@@ -1,4 +1,7 @@
 # NPM Package : kannada-transliterate
+
+[![DOI](https://zenodo.org/badge/683302874.svg)](https://doi.org/10.5281/zenodo.14250333)
+
 The package transliterates text from Kannada ಕನ್ನಡ (kannaḍa) script to Latin script based on [ISO 15919](https://en.wikipedia.org/wiki/ISO_15919) transliteration standard and from Latin script based on [IAST](https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration) or [ISO 15919](https://en.wikipedia.org/wiki/ISO_15919) to Kannada ಕನ್ನಡ (kannaḍa) script. The ```ISO 15919``` has non-strict and strict nasalisation versions of anusvāra transliteration that is made available with this package. To experiment functionality of this package use the [Kannada Transliterator App](https://vyshantha.github.io/kannadatransliterate/) website on you browser.
 
 ## Install [Node](https://nodejs.org/en/download), [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and then install this package
