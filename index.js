@@ -69,7 +69,15 @@ function kannadatransliterate(type, direction, input, strictnasalisation, ISOOnl
                 resultKn = resultKn.slice(0, -1) + latinToKannada[input[u-1] + input[u]];
               }
             } else {
-              resultKn = resultKn.slice(0, -1) + diacritics[input[u-1] + input[u]];
+              if (anuswaraEndings.indexOf(input[u]) > -1 && diacritics[input[u + 1]]) {
+                resultKn = resultKn.slice(0, -1) + latinToKannada[input[u] + 'a'] + diacritics[input[u + 1]];
+                u = u + 1;
+              } else if (diacritics[input[u + 1]]) {
+                resultKn = resultKn.slice(0, -1) + latinToKannada[input[u] + 'a'] + diacritics[input[u + 1]];
+                u = u + 1;
+              } else {
+                resultKn = resultKn.slice(0, -1) + diacritics[input[u - 1] + input[u]];
+              }
             }
           } else if (!diacritics[input[u-2]] && !diacritics[input[u-1]] && diacritics[input[u]]) { // Vowel 1-character
             if (input[u] == "a" && input[u-1] == " ") {
